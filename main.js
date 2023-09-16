@@ -1,6 +1,6 @@
 function send_msg(question) {
     const chat = document.getElementById("chat");
-    chat.innerHTML+=`<div class="msg-user break-word tracking-wide m-2 p-3 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-bl-lg w-fit ml-auto">
+    chat.innerHTML+=`<div class="msg-user break-word tracking-wide  p-1 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-bl-lg w-fit ml-auto">
                         ${question}
                     </div>`;
     chat.scroll({
@@ -14,7 +14,7 @@ function send_msg(question) {
 function send_res(ans) {
     const chat = document.getElementById("chat");
     chat.innerHTML+=`<div
-                        class="msg-bot tracking-wide m-2 mr-10 p-3 break-word bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-br-lg w-fit mr-auto">
+                        class="msg-bot tracking-wide p-1 break-word bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-br-lg w-fit mr-auto">
                         ${ans}
                     </div>`;
     chat.scroll({
@@ -36,8 +36,14 @@ async function query(data) {
 	const result = await response.json();
 	return result;
 }
-
-
+try {
+    query("tst").then((res)=>{
+        console.log(res)
+    })
+    
+} catch (error) {
+    console.log(error)
+}
 
 document.getElementById("send").addEventListener('click',function(){
     // console.log("salah");
