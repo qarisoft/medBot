@@ -1,5 +1,4 @@
-# Email Subscribe Project
+# Test Version of qarisoft Medical Bot
 
-Email Subscribe mini-project from my Tailwind course.
+Medical Bot
 
-![Alt text](images/email-subscribe.png)
