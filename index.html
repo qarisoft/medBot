@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>QariSoft Medical Bot</title>
+
+</head>
+
+<body>
+    <div class="flex items-center font- justify-center h-screen bg-zinc-800">
+        <!-- Card -->
+
+        <div class="bg-slate-950 p-2 mx-6 rounded-2xl">
+            <!-- Flex Container -->
+            <div class="flex flex-col  rounded-l-xl">
+
+                <!-- Content -->
+                <div class="p-6 md:p-12">
+                    <h2 class="font-serif text-xl font-medium text-center text-white ">
+                        QariSoft Medical Bot
+                    </h2>
+
+
+                    <div class=" mt-5 space-y-4 rounded-md    z-20 border border-slate-800 shadow-slate-700  shadow-md shadow-inner ">
+
+                        <div
+                            class="p-2 flex-col h-64 gap-4  overflow-auto" id="chat">
+                            <div
+                                class="msg-user hidden tracking-wide m-2 p-3 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-bl-lg w-fit ml-auto">
+                                
+                            </div>
+                            <p
+                                class="msg-bot  hidden break-all tracking-wide m-2 p-3 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-br-lg w-fit mr-auto">
+                            </p>
+                            
+
+                        </div>
+                        <!-- <form action=""> -->
+
+                            <div class="send   w-full  p-[3px] pb-2 flex shadow-slate-900 shadow-md ">
+                                <input type="text"
+                                id="qz_input"
+                                class="input text-white bg-slate-900 pl-2  rounded-sm grow focus-visible:bg-slate-800  focus-visible:outline-0   " >
+                                <div class="t  ml-1">
+                                    
+                                    <button type="submit" class="p-[8px] bg-gray-500  w-15  rounded-full text-black font-serif " id="send" >send</button>
+                                </div>
+                            </div>
+                        <!-- </form> -->
+
+                    </div>
+                    <div class="flex flex-col mt-5 gap-2 text-slate-300 text-left">
+
+                        <button class="l1 w-fit shadow-sm p-1  shadow-sky-950" id="fever">
+                            
+                                what is fever?
+                            
+                        </button>
+                        
+                        <button id="headache" class="l1 w-fit  shadow-sm p-1  shadow-sky-950">
+                            
+                            give me medication for headache?
+                        
+                    </button>
+                    </div>
+
+                </div>
+
+                <p class="px-8 py-4   leading-5 text-xs tracking-wide  text-white">
+                    Make sure not to have spelling mistaks so bot can answer you best way.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
