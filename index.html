@@ -20,53 +20,71 @@
             <div class="flex flex-col  rounded-l-xl">
 
                 <!-- Content -->
+                <div class="dir-rtl flex justify-end">
+
+                    <h1 class=" text-slate-300">نسخه تجريبية</h1>
+                </div>
                 <div class="p-6 md:p-12">
                     <h2 class="font-serif text-xl font-medium text-center text-white ">
                         QariSoft Medical Bot
                     </h2>
 
 
-                    <div class=" mt-5 space-y-4 rounded-md    z-20 border border-slate-800 shadow-slate-700  shadow-md shadow-inner p-1 pb-2">
+                    <div
+                        class=" mt-5 space-y-4 rounded-tl-md rounded-tr-md bg-slate-900  z-20 borderj border-slate-800 shadow-slate-70d0  shadow-sm  ">
 
                         <div class="p-2 flex flex-col h-64 gap-2  overflow-auto " id="chat">
-                            <p
-                                class="msg-user   hidden p-3 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-bl-lg w-fit ml-auto">
-                                dasdasdasdadasdsadasdjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-                            </p>
-                            <p
-                                class="msg-bot  hidden break-word   p-3 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-br-lg w-fit mr-auto">
-                            dasdasdasddddddddddddd
-                            </p>
-                            
+                            <div class="msg flex hidden ">
+
+                                <div class="grow w-10"></div>
+                                <p
+                                    class="msg-user   p-3 bg-slate-600 break-word rounded-tl-lg rounded-tr-lg rounded-bl-lg ">
+                                    what is best medication for headache?
+                                </p>
+                            </div>
+                            <div class="msg flex hidden ">
+
+                                <p style="overflow-wrap:anywhere;"
+                                    class="msg-bot     p-3 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-br-lg">
+                                    ssssssssssssssssssssssssssssssssdddddddddddddddddddd
+
+                                </p>
+                            </div>
+
 
                         </div>
                         <!-- <form action=""> -->
 
-                            <div class="send   w-full  p-[3px] py-2 flex border border-gray-600 rounded-md mb-2 ">
-                                <input type="text"
-                                id="qz_input"
-                                class="input text-white bg-slate-950 pl-2  rounded-sm grow focus-visible:bg-slate-800  focus-visible:outline-0   " >
-                                <div class="t  ml-1">
-                                    
-                                    <button type="submit" class="p-[8px] bg-gray-500  w-15  rounded-full text-black font-serif " id="send" >send</button>
-                                </div>
+                        <div
+                            class="send   w-full  bg-slate-950 p-[3px] py-2 flex shadow-sm shadow-gray-800 border-gray-600  mb-2 ">
+
+                            <div class="grow">
+                                <input type="text" id="qz_input"
+                                    class="input text-white w-full pl-2 h-full bg-transparent rounded-sm  focus-visible:bg-slate-800  focus-visible:outline-0   ">
                             </div>
+                            <div class="t  ml-1">
+
+                                <button type="submit"
+                                    class="py-[4px] px-[8px] bg-sky-700    rounded-md text-black font-serif "
+                                    id="send">send</button>
+                            </div>
+                        </div>
                         <!-- </form> -->
 
                     </div>
                     <div class="flex flex-col mt-5 gap-2 text-slate-300 text-left">
 
-                        <button class="l1 w-fit  p-2 shadow-md shadow-sky-800" id="fever">
-                            
-                                what is fever?
-                            
+                        <button class="l1 w-fit  p-2 shadow-sm shadow-sky-800" id="fever">
+
+                            what is fever?
+
                         </button>
-                        
+
                         <button id="headache" class="l1 w-fit  shadow-sm p-2  shadow-sky-800">
-                            
+
                             give me medication for headache?
-                        
-                    </button>
+
+                        </button>
                     </div>
 
                 </div>

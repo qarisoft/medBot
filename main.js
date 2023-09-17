@@ -1,7 +1,13 @@
 function send_msg(question) {
     const chat = document.getElementById("chat");
-    chat.innerHTML+=`<div class="msg-user break-word tracking-wide  p-1 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-bl-lg w-fit ml-auto">
+    chat.innerHTML+=`<div class="msg flex ">
+                        <div class="grow w-6"></div>
+                        <p
+                            style="
+                            text-overflow: ellipsis;"
+                            class="msg-user break-all  p-1 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-bl-lg ">
                         ${question}
+                        </p>
                     </div>`;
     chat.scroll({
         top: chat.scrollHeight,
@@ -13,10 +19,15 @@ function send_msg(question) {
 
 function send_res(ans) {
     const chat = document.getElementById("chat");
-    chat.innerHTML+=`<div
-                        class="msg-bot tracking-wide p-1 break-word bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-br-lg w-fit mr-auto">
-                        ${ans}
-                    </div>`;
+    chat.innerHTML+=`<div class="msg flex ">
+                       <p
+                            style="overflow-wrap:anywhere;
+                            text-overflow: ellipsis;"
+                            class="msg-bot  mr-3   p-1 bg-slate-600 rounded-tl-lg rounded-tr-lg rounded-br-lg">
+                            ${ans}
+                        </p>
+                    </div>
+                    `;
     chat.scroll({
         top: chat.scrollHeight,
         // left: 100,
